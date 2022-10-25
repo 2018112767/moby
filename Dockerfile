@@ -198,6 +198,7 @@ ENV INSTALL_BINARY_NAME=gotestsum
 ARG GOTESTSUM_COMMIT
 COPY hack/dockerfile/install/install.sh ./install.sh
 COPY hack/dockerfile/install/$INSTALL_BINARY_NAME.installer ./
+COPY gotestsum /home/zhs/go/src/gotest.tools
 RUN PREFIX=/build ./install.sh $INSTALL_BINARY_NAME
 
 FROM dev-base AS dockercli

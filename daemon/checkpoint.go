@@ -71,7 +71,9 @@ func (daemon *Daemon) CheckpointCreate(name string, config types.CheckpointCreat
 		return fmt.Errorf("cannot checkpoint container %s: %s", name, err)
 	}
 
-	err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.Exit)
+	//err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.Exit)
+	err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.PreDump, config.ParentPath, config.Exit)
+
 	if err != nil {
 		os.RemoveAll(checkpointDir)
 		return fmt.Errorf("Cannot checkpoint container %s: %s", name, err)

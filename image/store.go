@@ -28,6 +28,7 @@ type Store interface {
 	Map() map[ID]*Image
 	Heads() map[ID]*Image
 	Len() int
+	Add(id ID) error
 }
 
 // LayerGetReleaser is a minimal interface for getting and releasing images.
@@ -66,6 +67,39 @@ func NewImageStore(fs StoreBackend, lss map[string]LayerGetReleaser) (Store, err
 	return is, nil
 }
 
+func (is *store) Add(id ID) error {
+	err := is.fs.AddImageMeta(func(dgst digest.Digest) error {
+		img, err := is.Get(IDFromDigest(dgst))
+		if err != nil {
+			logrus.Errorf("invalid image %v, %v", dgst, err)
+			return nil
+		}
+		var l layer.Layer
+		if chainID := img.RootFS.ChainID(); chainID != "" {
+			l, err = is.lss[img.OperatingSystem()].Get(chainID)
+			if err != nil {
+				return err
+			}
+		}
+		if err := is.digestSet.Add(dgst); err != nil {
+			return err
+		}
+
+		imageMeta := &imageMeta{
+			layer:    l,
+			children: make(map[ID]struct{}),
+		}
+
+		is.images[IDFromDigest(dgst)] = imageMeta
+
+		return nil
+
+	}, id)
+	if err != nil {
+		return err
+	}
+	return nil
+}
 func (is *store) restore() error {
 	err := is.fs.Walk(func(dgst digest.Digest) error {
 		img, err := is.Get(IDFromDigest(dgst))

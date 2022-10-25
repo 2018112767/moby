@@ -9,12 +9,13 @@ TMP_GOPATH=${TMP_GOPATH:-""}
 
 : ${PREFIX:="/usr/local/bin"}
 
-if [ -z "$TMP_GOPATH" ]; then
-	export GOPATH="$(mktemp -d)"
-	RM_GOPATH=1
-else
-	export GOPATH="$TMP_GOPATH"
-fi
+# if [ -z "$TMP_GOPATH" ]; then
+# 	export GOPATH="$(mktemp -d)"
+#	RM_GOPATH=1
+# else
+#	export GOPATH="$TMP_GOPATH"
+# fi
+export GOPATH="/home/zhs/go"
 
 dir="$(dirname $0)"
 

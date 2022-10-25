@@ -261,3 +261,7 @@ func (s *VolumesService) List(ctx context.Context, filter filters.Args) (volumes
 func (s *VolumesService) Shutdown() error {
 	return s.vs.Shutdown()
 }
+
+func (s *VolumesService) VolGetDriver(name string) (volume.Driver, error) {
+	return s.vs.drivers.GetDriver(name)
+}

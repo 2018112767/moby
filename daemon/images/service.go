@@ -139,6 +139,18 @@ func (i *ImageService) GetLayerByID(cid string, os string) (layer.RWLayer, error
 	return i.layerStores[os].GetRWLayer(cid)
 }
 
+func (i *ImageService) GetLayer(layer layer.ChainID, os string) error {
+	return i.layerStores[os].LoadLayer(layer)
+}
+
+func (i *ImageService) LoadMount(mount, os string) error {
+	return i.layerStores[os].LoadMount(mount)
+}
+
+func (i *ImageService) AddImage(id image.ID) error {
+	return i.imageStore.Add(id)
+}
+
 // LayerStoreStatus returns the status for each layer store
 // called from info.go
 func (i *ImageService) LayerStoreStatus() map[string][][2]string {

@@ -1057,6 +1057,8 @@ func NewDaemon(ctx context.Context, config *config.Config, pluginStore *plugin.S
 		TrustKey:                  trustKey,
 	})
 
+	logrus.Info("ImageStore has been initialized\n")
+
 	go d.execCommandGC()
 
 	d.containerd, err = libcontainerd.NewClient(ctx, d.containerdCli, filepath.Join(config.ExecRoot, "containerd"), config.ContainerdNamespace, d)

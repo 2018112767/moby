@@ -481,7 +481,7 @@ func (c *client) Status(ctx context.Context, containerID string) (containerd.Pro
 	return s.Status, nil
 }
 
-func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, exit bool) error {
+func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool) error {
 	p, err := c.getProcess(ctx, containerID, libcontainerdtypes.InitProcessName)
 	if err != nil {
 		return err

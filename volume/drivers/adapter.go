@@ -59,6 +59,10 @@ func (a *volumeDriverAdapter) List() ([]volume.Volume, error) {
 	return out, nil
 }
 
+func (a *volumeDriverAdapter) Add(name string, opts map[string]string) error {
+	return nil
+}
+
 func (a *volumeDriverAdapter) Get(name string) (volume.Volume, error) {
 	v, err := a.proxy.Get(name)
 	if err != nil {

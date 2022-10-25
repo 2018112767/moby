@@ -131,6 +131,18 @@ func (ls *layerStore) Driver() graphdriver.Driver {
 	return ls.driver
 }
 
+func (ls *layerStore) LoadLayer(layer ChainID) error {
+	l, err := ls.loadLayer(layer)
+	if err != nil {
+		logrus.Debugf("Failed to load layer %s:%s", layer, err)
+	}
+	if l.parent != nil {
+		l.parent.referenceCount++
+		logrus.Debugf("LoadLayer---->Layer cacheID : %s,layer.referenceCount:%d", l.parent.cacheID, l.parent.referenceCount)
+	}
+	return err
+}
+
 func (ls *layerStore) loadLayer(layer ChainID) (*roLayer, error) {
 	cl, ok := ls.layerMap[layer]
 	if ok {
@@ -192,6 +204,10 @@ func (ls *layerStore) loadLayer(layer ChainID) (*roLayer, error) {
 	ls.layerMap[cl.chainID] = cl
 
 	return cl, nil
+}
+
+func (ls *layerStore) LoadMount(mount string) error {
+	return ls.loadMount(mount)
 }
 
 func (ls *layerStore) loadMount(mount string) error {

@@ -14,6 +14,8 @@ import (
 type CheckpointCreateOptions struct {
 	CheckpointID  string
 	CheckpointDir string
+	ParentPath    string
+	PreDump       bool
 	Exit          bool
 }
 

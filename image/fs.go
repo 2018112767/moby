@@ -25,6 +25,7 @@ type StoreBackend interface {
 	SetMetadata(id digest.Digest, key string, data []byte) error
 	GetMetadata(id digest.Digest, key string) ([]byte, error)
 	DeleteMetadata(id digest.Digest, key string) error
+	AddImageMeta(f DigestWalkFunc, id ID) error
 }
 
 // fs implements StoreBackend using the filesystem.
@@ -62,6 +63,26 @@ func (s *fs) contentFile(dgst digest.Digest) string {
 
 func (s *fs) metadataDir(dgst digest.Digest) string {
 	return filepath.Join(s.root, metadataDirName, string(dgst.Algorithm()), dgst.Hex())
+}
+
+func (s *fs) AddImageMeta(f DigestWalkFunc, id ID) error {
+	s.RLock()
+	_, err := ioutil.ReadDir(filepath.Join(s.root, contentDirName, string(digest.Canonical)))
+	s.RUnlock()
+	if err != nil {
+		return err
+	}
+	dgst := digest.NewDigestFromHex(string(digest.Canonical), string(id))
+	if err := dgst.Validate(); err != nil {
+		logrus.Debugf(" invalid digest %s: %s", dgst, err)
+		return err
+	}
+	if err := f(dgst); err != nil {
+		return err
+
+	}
+	return nil
+
 }
 
 // Walk calls the supplied callback for each image ID in the storage backend.

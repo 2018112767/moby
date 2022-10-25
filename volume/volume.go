@@ -30,6 +30,7 @@ type Driver interface {
 	// Scope returns the scope of the driver (e.g. `global` or `local`).
 	// Scope determines how the driver is handled at a cluster level
 	Scope() string
+	Add(name string, opts map[string]string) (err error)
 }
 
 // Capability defines a set of capabilities that a driver is able to handle.

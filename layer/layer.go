@@ -193,6 +193,9 @@ type Store interface {
 	Cleanup() error
 	DriverStatus() [][2]string
 	DriverName() string
+
+	LoadLayer(diff_id ChainID) error
+	LoadMount(mount_id string) error
 }
 
 // DescribableStore represents a layer store capable of storing
