@@ -145,6 +145,11 @@ func WithCheckpointTaskExit(ctx context.Context, client *Client, c *containers.C
 	return nil
 }
 
+func WithCheckpointTaskPredump(ctx context.Context, client *Client, c *containers.Container, index *imagespec.Index, copts *options.CheckpointOptions) error {
+	copts.Predump = true
+	return nil
+}
+
 // GetIndexByMediaType returns the index in a manifest for the specified media type
 func GetIndexByMediaType(index *imagespec.Index, mt string) (*imagespec.Descriptor, error) {
 	for _, d := range index.Manifests {

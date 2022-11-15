@@ -501,6 +501,32 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 			return nil
 		})
 	}
+	if preDump {
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					Predump: true,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.Predump = true
+			}
+			return nil
+		})
+	}
+	if parentPath != "" {
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					ParentPath: parentPath,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.ParentPath = parentPath
+			}
+			return nil
+		})
+	}
 	img, err := p.(containerd.Task).Checkpoint(ctx, opts...)
 	if err != nil {
 		return wrapError(err)
