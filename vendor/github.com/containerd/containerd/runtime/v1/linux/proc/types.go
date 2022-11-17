@@ -58,9 +58,11 @@ type CheckpointConfig struct {
 	WorkDir                  string
 	Path                     string
 	Exit                     bool
+	Predump                  bool
 	AllowOpenTCP             bool
 	AllowExternalUnixSockets bool
 	AllowTerminal            bool
 	FileLocks                bool
 	EmptyNamespaces          []string
+	Parentpath               string
 }

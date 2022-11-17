@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 /*
@@ -451,12 +452,14 @@ func (s *Service) Checkpoint(ctx context.Context, r *shimapi.CheckpointTaskReque
 	if err := p.(*proc.Init).Checkpoint(ctx, &proc.CheckpointConfig{
 		Path:                     r.Path,
 		Exit:                     options.Exit,
+		Predump:                  options.Predump,
 		AllowOpenTCP:             options.OpenTcp,
 		AllowExternalUnixSockets: options.ExternalUnixSockets,
 		AllowTerminal:            options.Terminal,
 		FileLocks:                options.FileLocks,
 		EmptyNamespaces:          options.EmptyNamespaces,
 		WorkDir:                  options.WorkPath,
+		Parentpath:               options.ParentPath,
 	}); err != nil {
 		return nil, errdefs.ToGRPC(err)
 	}

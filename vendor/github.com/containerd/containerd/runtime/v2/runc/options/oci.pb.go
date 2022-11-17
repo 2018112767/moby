@@ -102,6 +102,8 @@ type CheckpointOptions struct {
 	ImagePath string `protobuf:"bytes,8,opt,name=image_path,json=imagePath,proto3" json:"image_path,omitempty"`
 	// checkpoint work path
 	WorkPath             string   `protobuf:"bytes,9,opt,name=work_path,json=workPath,proto3" json:"work_path,omitempty"`
+	// predump the container after a checkpoint
+	Predump bool `protobuf:"varint,10,opt,name=predump,proto3" json:"predump,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -425,6 +427,16 @@ func (m *CheckpointOptions) MarshalTo(dAtA []byte) (int, error) {
 		i = encodeVarintOci(dAtA, i, uint64(len(m.WorkPath)))
 		i += copy(dAtA[i:], m.WorkPath)
 	}
+	if m.Predump {
+		dAtA[i] = 0x50
+		i++
+		if m.Predump {
+			dAtA[i] = 1
+		} else {
+			dAtA[i] = 0
+		}
+		i++
+	}
 	if m.XXX_unrecognized != nil {
 		i += copy(dAtA[i:], m.XXX_unrecognized)
 	}
@@ -557,6 +569,9 @@ func (m *CheckpointOptions) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovOci(uint64(l))
 	}
+	if m.Predump {
+		n += 2
+	}
 	if m.XXX_unrecognized != nil {
 		n += len(m.XXX_unrecognized)
 	}
@@ -627,6 +642,7 @@ func (this *CheckpointOptions) String() string {
 		`CgroupsMode:` + fmt.Sprintf("%v", this.CgroupsMode) + `,`,
 		`ImagePath:` + fmt.Sprintf("%v", this.ImagePath) + `,`,
 		`WorkPath:` + fmt.Sprintf("%v", this.WorkPath) + `,`,
+		`Predump:` + fmt.Sprintf("%v", this.Predump) + `,`,
 		`XXX_unrecognized:` + fmt.Sprintf("%v", this.XXX_unrecognized) + `,`,
 		`}`,
 	}, "")
@@ -1252,6 +1268,26 @@ func (m *CheckpointOptions) Unmarshal(dAtA []byte) error {
 			}
 			m.WorkPath = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
+		case 10:
+			if wireType != 0 {
+				return fmt.Errorf("proto: wrong wireType = %d for field Predump", wireType)
+			}
+			var v int
+			for shift := uint(0); ; shift += 7 {
+				if shift >= 64 {
+					return ErrIntOverflowOci
+				}
+				if iNdEx >= l {
+					return io.ErrUnexpectedEOF
+				}
+				b := dAtA[iNdEx]
+				iNdEx++
+				v |= int(b&0x7F) << shift
+				if b < 0x80 {
+					break
+				}
+			}
+			m.Predump = bool(v != 0)
 		default:
 			iNdEx = preIndex
 			skippy, err := skipOci(dAtA[iNdEx:])

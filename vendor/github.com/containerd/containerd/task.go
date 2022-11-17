@@ -430,6 +430,15 @@ func (t *task) Checkpoint(ctx context.Context, opts ...CheckpointTaskOpts) (Imag
 			return nil, err
 		}
 	}
+
+	/*
+		if i.Options.(*runctypes.CheckpointOptions).Predump != false {
+			logrus.Info("The value of Predump is true")
+		} else {
+			logrus.Info("The value of Predump is false")
+		}
+	*/
+
 	// set a default name
 	if i.Name == "" {
 		i.Name = fmt.Sprintf(checkpointNameFormat, t.id, time.Now().Format(checkpointDateFormat))
