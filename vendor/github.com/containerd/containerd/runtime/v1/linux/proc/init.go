@@ -442,7 +442,7 @@ func (p *Init) checkpoint(ctx context.Context, r *CheckpointConfig) error {
 		defer os.RemoveAll(work)
 	}
 	if err := p.runtime.Checkpoint(ctx, p.id, &runc.CheckpointOpts{
-		WorkDir:                  work,
+		WorkDir:                  r.WorkDir,
 		ImagePath:                r.Path,
 		AllowOpenTCP:             r.AllowOpenTCP,
 		AllowExternalUnixSockets: r.AllowExternalUnixSockets,

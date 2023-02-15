@@ -450,7 +450,7 @@ func (s *Service) Checkpoint(ctx context.Context, r *shimapi.CheckpointTaskReque
 		options = *v.(*runctypes.CheckpointOptions)
 	}
 	if err := p.(*proc.Init).Checkpoint(ctx, &proc.CheckpointConfig{
-		Path:                     r.Path,
+		Path:                     options.WorkPath,
 		Exit:                     options.Exit,
 		Predump:                  options.Predump,
 		AllowOpenTCP:             options.OpenTcp,
