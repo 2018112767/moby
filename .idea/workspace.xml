@@ -19,11 +19,8 @@
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerversion/version_autogen.go" beforeDir="false" afterPath="$PROJECT_DIR$/dockerversion/version_autogen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
