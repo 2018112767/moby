@@ -12,20 +12,18 @@
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/linux/runctypes/runc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/linux/runctypes/runc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/linux/runctypes/runc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/linux/runctypes/runc.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/shim/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/shim/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerversion/version_autogen.go" beforeDir="false" afterPath="$PROJECT_DIR$/dockerversion/version_autogen.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/linux/proc/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/linux/proc/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/shim/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/shim/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/containerd/containerd" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="useGoPathFromSystemEnvironment" value="false" />
@@ -181,12 +179,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/libcontainerd/remote/client.go</url>
-          <line>226</line>
+          <line>227</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/libcontainerd/remote/client.go</url>
-          <line>296</line>
+          <line>297</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">

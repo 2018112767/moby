@@ -159,6 +159,7 @@ func (c *client) Start(ctx context.Context, id, checkpointDir string, withStdin 
 		// write checkpoint to the content store
 		tar := archive.Diff(ctx, "", checkpointDir)
 		cp, err = c.writeContent(ctx, images.MediaTypeContainerd1Checkpoint, checkpointDir, tar)
+		cp.Annotations["Path"] = checkpointDir // check
 		// remove the checkpoint when we're done
 		defer func() {
 			if cp != nil {
@@ -870,9 +871,10 @@ func (c *client) writeContent(ctx context.Context, mediaType, ref string, r io.R
 		return nil, err
 	}
 	return &types.Descriptor{
-		MediaType: mediaType,
-		Digest:    writer.Digest(),
-		Size_:     size,
+		MediaType:   mediaType,
+		Digest:      writer.Digest(),
+		Size_:       size,
+		Annotations: make(map[string]string),
 	}, nil
 }
 
