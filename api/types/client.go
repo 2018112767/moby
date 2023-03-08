@@ -17,6 +17,8 @@ type CheckpointCreateOptions struct {
 	ParentPath    string
 	PreDump       bool
 	Exit          bool
+	TcpConnect    bool
+	ShellJob      bool
 }
 
 // CheckpointListOptions holds parameters to list checkpoints for a container
@@ -94,6 +96,9 @@ type ContainerRemoveOptions struct {
 type ContainerStartOptions struct {
 	CheckpointID  string
 	CheckpointDir string
+	LazyPages     bool
+	ShellJob      bool
+	TcpConnect    bool
 }
 
 // CopyToContainerOptions holds information

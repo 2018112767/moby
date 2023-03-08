@@ -216,6 +216,7 @@ ARG RUNC_COMMIT
 ARG RUNC_BUILDTAGS
 COPY hack/dockerfile/install/install.sh ./install.sh
 COPY hack/dockerfile/install/$INSTALL_BINARY_NAME.installer ./
+COPY opencontainers /home/zhs/go/src/github.com/opencontainers
 RUN PREFIX=/build ./install.sh $INSTALL_BINARY_NAME
 
 FROM dev-base AS tini

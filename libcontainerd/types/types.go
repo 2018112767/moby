@@ -69,7 +69,7 @@ type Client interface {
 
 	UpdateResources(ctx context.Context, containerID string, resources *Resources) error
 	//CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, exit bool) error
-	CreateCheckpoint(ctx context.Context, containerID string, checkpointDir string, preDump bool, parentPath string, exit bool) error
+	CreateCheckpoint(ctx context.Context, containerID string, checkpointDir string, preDump bool, parentPath string, exit bool, shellJob bool, tcpConnect bool) error
 }
 
 // StdioCallback is called to connect a container or process stdio.

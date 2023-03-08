@@ -482,7 +482,7 @@ func (c *client) Status(ctx context.Context, containerID string) (containerd.Pro
 	return s.Status, nil
 }
 
-func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool) error {
+func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool, shellJob bool, tcpConnect bool) error {
 	p, err := c.getProcess(ctx, containerID, libcontainerdtypes.InitProcessName)
 	if err != nil {
 		return err
@@ -511,6 +511,32 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 			} else {
 				opts, _ := r.Options.(*runctypes.CheckpointOptions)
 				opts.Predump = true
+			}
+			return nil
+		})
+	}
+	if shellJob {
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					Terminal: true,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.Terminal = true
+			}
+			return nil
+		})
+	}
+	if tcpConnect {
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					OpenTcp: true,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.OpenTcp = true
 			}
 			return nil
 		})
