@@ -528,17 +528,19 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 			return nil
 		})
 	}
-	opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
-		if r.Options == nil {
-			r.Options = &runctypes.CheckpointOptions{
-				OpenTcp: true,
+	/*
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					OpenTcp: true,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.OpenTcp = true
 			}
-		} else {
-			opts, _ := r.Options.(*runctypes.CheckpointOptions)
-			opts.OpenTcp = true
-		}
-		return nil
-	})
+			return nil
+		})
+	*/
 	if checkpointDir != "" {
 		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
 			if r.Options == nil {

@@ -6,21 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d533e2c-2e9d-477c-a983-efabda651b3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/runtime/v1/linux/proc/init_state.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerversion/version_autogen.go" beforeDir="false" afterPath="$PROJECT_DIR$/dockerversion/version_autogen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
