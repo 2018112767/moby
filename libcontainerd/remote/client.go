@@ -157,7 +157,7 @@ func (c *client) Start(ctx context.Context, id, checkpointDir string, withStdin 
 
 	if checkpointDir != "" {
 		// write checkpoint to the content store
-		tar := archive.Diff(ctx, "", checkpointDir)
+		tar := archive.MyDiff(ctx)
 		cp, err = c.writeContent(ctx, images.MediaTypeContainerd1Checkpoint, checkpointDir, tar)
 		cp.Annotations["Path"] = checkpointDir // check
 		// remove the checkpoint when we're done

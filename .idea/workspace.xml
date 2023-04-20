@@ -5,33 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d533e2c-2e9d-477c-a983-efabda651b3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/types/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/types/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/runc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/runc.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/runc.sha256" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daemon/checkpoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/checkpoint.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerversion/version_autogen.go" beforeDir="false" afterPath="$PROJECT_DIR$/dockerversion/version_autogen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hack/dockerfile/install/runc.installer" beforeDir="false" afterPath="$PROJECT_DIR$/hack/dockerfile/install/runc.installer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libcontainerd/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencontainers/runc" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/archive/tar.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/archive/tar.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +20,7 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/containerd/containerd" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="useGoPathFromSystemEnvironment" value="false" />
