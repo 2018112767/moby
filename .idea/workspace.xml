@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d533e2c-2e9d-477c-a983-efabda651b3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd/archive/tar.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/archive/tar.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" afterDir="false" />
