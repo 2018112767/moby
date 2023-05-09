@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/archive/tar.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/archive/tar.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" afterDir="false" />
     </list>
@@ -20,7 +19,7 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/containerd/containerd" />
   </component>
   <component name="GoLibraries">
     <option name="useGoPathFromSystemEnvironment" value="false" />
