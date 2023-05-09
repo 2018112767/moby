@@ -646,10 +646,12 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 
 	mydebug("before apply")
 
-	_, err = archive.Apply(ctx, checkpointDir, content.NewReader(rat))
-	if err != nil {
-		return errdefs.System(errors.Wrapf(err, "failed to read checkpoint reader"))
-	}
+	/*
+		_, err = archive.Apply(ctx, checkpointDir, content.NewReader(rat))
+		if err != nil {
+			return errdefs.System(errors.Wrapf(err, "failed to read checkpoint reader"))
+		}
+	*/
 
 	mydebug("after apply")
 
