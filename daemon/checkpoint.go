@@ -72,7 +72,7 @@ func (daemon *Daemon) CheckpointCreate(name string, config types.CheckpointCreat
 	}
 
 	//err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.Exit)
-	err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.PreDump, config.ParentPath, config.Exit, config.ShellJob, config.TcpConnect)
+	err = daemon.containerd.CreateCheckpoint(context.Background(), container.ID, checkpointDir, config.PreDump, config.ParentPath, config.Exit, config.ShellJob, config.TcpConnect, config.PageServer)
 
 	if err != nil {
 		os.RemoveAll(checkpointDir)

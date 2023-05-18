@@ -482,7 +482,7 @@ func (c *client) Status(ctx context.Context, containerID string) (containerd.Pro
 	return s.Status, nil
 }
 
-func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool, shellJob bool, tcpConnect bool) error {
+func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool, shellJob bool, tcpConnect bool, pageServer string) error {
 	p, err := c.getProcess(ctx, containerID, libcontainerdtypes.InitProcessName)
 	if err != nil {
 		return err
@@ -574,6 +574,19 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 			} else {
 				opts, _ := r.Options.(*runctypes.CheckpointOptions)
 				opts.WorkPath = checkpointDir
+			}
+			return nil
+		})
+	}
+	if pageServer != "" {
+		opts = append(opts, func(r *containerd.CheckpointTaskInfo) error {
+			if r.Options == nil {
+				r.Options = &runctypes.CheckpointOptions{
+					PageServer: pageServer,
+				}
+			} else {
+				opts, _ := r.Options.(*runctypes.CheckpointOptions)
+				opts.PageServer = pageServer
 			}
 			return nil
 		})

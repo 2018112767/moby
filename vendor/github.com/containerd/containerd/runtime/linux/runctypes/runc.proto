@@ -41,6 +41,7 @@ message CheckpointOptions {
 	string image_path = 9;
 	bool predump = 10;
 	string parenth_path = 11;
+	string page_server = 12;
 }
 
 message ProcessDetails {

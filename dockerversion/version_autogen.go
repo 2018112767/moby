@@ -6,9 +6,9 @@ package dockerversion
 // Default build-time variable for library-import.
 // This file is overridden on build with build-time information.
 const (
-	GitCommit             string = "0351a91330"
+	GitCommit             string = "a6901a5880"
 	Version               string = "dev"
-	BuildTime             string = "2023-04-20T02:16:07.000000000+00:00"
+	BuildTime             string = "2023-05-18T10:58:50.000000000+00:00"
 	IAmStatic             string = "true"
 	PlatformName          string = ""
 	ProductName           string = ""

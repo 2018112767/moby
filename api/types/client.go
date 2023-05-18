@@ -19,6 +19,7 @@ type CheckpointCreateOptions struct {
 	Exit          bool
 	TcpConnect    bool
 	ShellJob      bool
+	PageServer    string
 }
 
 // CheckpointListOptions holds parameters to list checkpoints for a container

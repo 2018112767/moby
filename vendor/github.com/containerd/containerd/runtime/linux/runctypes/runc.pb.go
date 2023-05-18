@@ -128,6 +128,7 @@ type CheckpointOptions struct {
 	ImagePath            string   `protobuf:"bytes,9,opt,name=image_path,json=imagePath,proto3" json:"image_path,omitempty"`
 	Predump              bool     `protobuf:"varint,10,opt,name=predump,proto3" json:"predump,omitempty"`
 	ParentPath           string   `protobuf:"bytes,11,opt,name=parent_path,json=parentPath,proto3" json:"parent_path,omitempty"`
+	PageServer           string   `protobuf:"bytes,12,opt,name=page_server,json=pageServer,proto3" json:"page_server,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -550,6 +551,12 @@ func (m *CheckpointOptions) MarshalTo(dAtA []byte) (int, error) {
 		i = encodeVarintRunc(dAtA, i, uint64(len(m.ParentPath)))
 		i += copy(dAtA[i:], m.ParentPath)
 	}
+	if len(m.PageServer) > 0 {
+		dAtA[i] = 0x62
+		i++
+		i = encodeVarintRunc(dAtA, i, uint64(len(m.PageServer)))
+		i += copy(dAtA[i:], m.PageServer)
+	}
 	if m.XXX_unrecognized != nil {
 		i += copy(dAtA[i:], m.XXX_unrecognized)
 	}
@@ -723,6 +730,10 @@ func (m *CheckpointOptions) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovRunc(uint64(l))
 	}
+	l = len(m.PageServer)
+	if l > 0 {
+		n += 1 + l + sovRunc(uint64(l))
+	}
 	if m.XXX_unrecognized != nil {
 		n += len(m.XXX_unrecognized)
 	}
@@ -811,6 +822,7 @@ func (this *CheckpointOptions) String() string {
 		`ImagePath:` + fmt.Sprintf("%v", this.ImagePath) + `,`,
 		`Predump:` + fmt.Sprintf("%v", this.Predump) + `,`,
 		`ParentPath:` + fmt.Sprintf("%v", this.ParentPath) + `,`,
+		`PageServer:` + fmt.Sprintf("%v", this.PageServer) + `,`,
 		`XXX_unrecognized:` + fmt.Sprintf("%v", this.XXX_unrecognized) + `,`,
 		`}`,
 	}, "")
@@ -1685,6 +1697,38 @@ func (m *CheckpointOptions) Unmarshal(dAtA []byte) error {
 				return io.ErrUnexpectedEOF
 			}
 			m.ParentPath = string(dAtA[iNdEx:postIndex])
+			iNdEx = postIndex
+		case 12:
+			if wireType != 2 {
+				return fmt.Errorf("proto: wrong wireType = %d for field PageServer", wireType)
+			}
+			var stringLen uint64
+			for shift := uint(0); ; shift += 7 {
+				if shift >= 64 {
+					return ErrIntOverflowRunc
+				}
+				if iNdEx >= l {
+					return io.ErrUnexpectedEOF
+				}
+				b := dAtA[iNdEx]
+				iNdEx++
+				stringLen |= uint64(b&0x7F) << shift
+				if b < 0x80 {
+					break
+				}
+			}
+			intStringLen := int(stringLen)
+			if intStringLen < 0 {
+				return ErrInvalidLengthRunc
+			}
+			postIndex := iNdEx + intStringLen
+			if postIndex < 0 {
+				return ErrInvalidLengthRunc
+			}
+			if postIndex > l {
+				return io.ErrUnexpectedEOF
+			}
+			m.PageServer = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex

@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8d533e2c-2e9d-477c-a983-efabda651b3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/types/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/types/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daemon/checkpoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/checkpoint.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libcontainerd/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/types/types.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/archive/tar.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/archive/tar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     "configurable..is.expanded": "false",
     "configurable.GoLibrariesConfigurable.is.expanded": "true",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/zhs/go/src/github.com/opencontainers/runc",
+    "last_opened_file_path": "/home/zhs/go/src/github.com/docker/docker",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "go.sdk"
   }
@@ -142,12 +145,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go</url>
-          <line>1651</line>
+          <line>1663</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go</url>
-          <line>1427</line>
+          <line>1439</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
