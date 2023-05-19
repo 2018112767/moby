@@ -3,7 +3,6 @@ package remote // import "github.com/docker/docker/libcontainerd/remote"
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"io"
 	"os"
 	"path/filepath"
@@ -483,6 +482,7 @@ func (c *client) Status(ctx context.Context, containerID string) (containerd.Pro
 	return s.Status, nil
 }
 
+/*
 func mydebug(str string) error {
 	file, err := os.OpenFile("/etc/mylog3.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
 	if err != nil {
@@ -502,6 +502,7 @@ func mydebug(str string) error {
 
 	return nil
 }
+*/
 
 func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDir string, preDump bool, parentPath string, exit bool, shellJob bool, tcpConnect bool, pageServer string) error {
 	p, err := c.getProcess(ctx, containerID, libcontainerdtypes.InitProcessName)
@@ -617,7 +618,7 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 		return wrapError(err)
 	}
 	// Whatever happens, delete the checkpoint from containerd
-	mydebug("after checkpoint")
+	// mydebug("after checkpoint")
 	defer func() {
 		err := c.client.ImageService().Delete(context.Background(), img.Name())
 		if err != nil {
@@ -630,7 +631,7 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 	if err != nil {
 		return errdefs.System(errors.Wrapf(err, "failed to retrieve checkpoint data"))
 	}
-	mydebug("after readblob")
+	// mydebug("after readblob")
 
 	var index v1.Index
 	if err := json.Unmarshal(b, &index); err != nil {
@@ -648,7 +649,7 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 		return errdefs.System(errors.Wrapf(err, "invalid checkpoint"))
 	}
 
-	mydebug("before readat")
+	// mydebug("before readat")
 
 	rat, err := c.client.ContentStore().ReaderAt(ctx, *cpDesc)
 	if err != nil {
@@ -656,7 +657,7 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 	}
 	defer rat.Close()
 
-	mydebug("before apply")
+	// mydebug("before apply")
 
 	/*
 		_, err = archive.Apply(ctx, checkpointDir, content.NewReader(rat))
@@ -665,7 +666,7 @@ func (c *client) CreateCheckpoint(ctx context.Context, containerID, checkpointDi
 		}
 	*/
 
-	mydebug("after apply")
+	// mydebug("after apply")
 
 	return err
 }

@@ -1,52 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b55b2c53-d675-49e1-b995-a4cac48adcc7" name="Changes" comment="">
+    <list default="true" id="8d533e2c-2e9d-477c-a983-efabda651b3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd-shim.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/containerd.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/ctr.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-init" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-init.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-init.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-proxy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-proxy.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/docker-proxy.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-dev.sha256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-rootless.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-rootless.sh.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/dockerd-rootless.sh.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit-docker-proxy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit-docker-proxy.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit-docker-proxy.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/rootlesskit.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/runc.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/vpnkit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/vpnkit.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/binary-daemon/vpnkit.sha256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerversion/version_autogen.go" beforeDir="false" afterPath="$PROJECT_DIR$/dockerversion/version_autogen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/containerd/containerd/services/tasks/local.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libcontainerd/remote/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/libcontainerd/remote/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencontainers/runc" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/opencontainers/runc/libcontainer/container_linux.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FnioTNoPNeZupfWyZeSEn1rnro" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.vendoring.notification.had.been.shown&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zhs/go/src/github.com/docker/docker&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.sdk&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Go Remote.local">
+    <configuration name="Remote" type="GoRemoteDebugConfigurationType" factoryName="Go Remote" host="172.17.0.3" port="2375">
+      <option name="disconnectOption" value="STOP" />
+      <disconnect value="STOP" />
+      <method v="2" />
+    </configuration>
+    <configuration name="local" type="GoRemoteDebugConfigurationType" factoryName="Go Remote" port="1234">
+      <option name="disconnectOption" value="ASK" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Remote.Remote" />
+      <item itemvalue="Go Remote.local" />
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -58,5 +88,98 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/cmd/dockerd/docker.go</url>
+          <line>91</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/cmd/dockerd/docker.go</url>
+          <line>84</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/linux/task.go</url>
+          <line>283</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/errdefs/http_helpers.go</url>
+          <line>55</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/task.go</url>
+          <line>464</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.pb.go</url>
+          <line>1414</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.pb.go</url>
+          <line>1413</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/linux/proc/init.go</url>
+          <line>435</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go</url>
+          <line>1663</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/linux/runctypes/runc.pb.go</url>
+          <line>1439</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/shim/service.go</url>
+          <line>451</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/container.go</url>
+          <line>323</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/runtime/v1/linux/runtime.go</url>
+          <line>238</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/libcontainerd/remote/client.go</url>
+          <line>227</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/libcontainerd/remote/client.go</url>
+          <line>297</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.pb.go</url>
+          <line>1296</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
